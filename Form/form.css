@@ -1,0 +1,124 @@
+body {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 100vh;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    flex: 1;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.label-container {
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    flex: 2;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.gender-container {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.gender-options {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.gender-options label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    text-decoration: none;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+
+/* Radio button and checkbox styles */
+
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.1);
+    margin-bottom: 2px;
+}
+
+
+/* Submit button styles */
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+button[type="reset"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="reset"]:hover {
+    background-color: #555;
+}

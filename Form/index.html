@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Personal Information</h2>
+
+        <div class="input-container">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" placeholder="Enter your first name" required>
+        </div>
+
+        <div class="input-container">
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" placeholder="Enter your last name" required>
+        </div>
+
+        <div class="input-container">
+            <label for="mail">Email Id</label>
+            <input type="email" id="mail" placeholder="Enter valid email" required>
+        </div>
+
+        <div class="input-container">
+            <label for="mobile">Mobile No</label>
+            <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+        </div>
+
+        <div class="input-container">
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+
+        <div class="gender-container">
+            <label>Gender</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" id="submit">submit</button>
+            <button type="reset" id="reset">reset</button>
+        </div>
+
+        <!-- Add a submit button to submit the form if needed -->
+        <!-- <input type="submit" value="Submit"> -->
+    </div>
+</body>
+
+</html>
