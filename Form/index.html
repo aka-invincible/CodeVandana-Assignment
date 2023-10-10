@@ -10,57 +10,75 @@
 
 <body>
     <div class="container">
-        <h2>Personal Information</h2>
+        <h2>Survey Form</h2>
+        <form action="" id="survey-form">
+            <div class="input-container">
+                <label for="fname">First name</label>
+                <input type="text" name="First name" id="fname" placeholder="Enter your first name" required>
+            </div>
 
-        <div class="input-container">
-            <label for="fname">First name</label>
-            <input type="text" id="fname" placeholder="Enter your first name" required>
-        </div>
+            <div class="input-container">
+                <label for="lname">Last name</label>
+                <input type="text" name="Last name" id="lname" placeholder="Enter your last name" required>
+            </div>
 
-        <div class="input-container">
-            <label for="lname">Last name</label>
-            <input type="text" id="lname" placeholder="Enter your last name" required>
-        </div>
+            <div class="input-container">
+                <label for="mail">Email Id</label>
+                <input type="email" name="Email" id="mail" placeholder="Enter valid email" required>
+            </div>
 
-        <div class="input-container">
-            <label for="mail">Email Id</label>
-            <input type="email" id="mail" placeholder="Enter valid email" required>
-        </div>
+            <div class="input-container">
+                <label for="mobile">Mobile No</label>
+                <input type="tel" pattern="[0-9]{10}" name="Mobile" id="mobile" title="Please enter a valid 10-digit mobile number (numeric characters only)" placeholder="Enter your 10 digit mobile number" required>
+            </div>
 
-        <div class="input-container">
-            <label for="mobile">Mobile No</label>
-            <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
-        </div>
+            <div class="input-container">
+                <label for="profession">Profession</label>
+                <input type="text" name="Profession" id="profession" name="profession" placeholder="Enter your profession" required>
+            </div>
 
-        <div class="input-container">
-            <label for="country">Country</label>
-            <select id="country" name="country" required>
+            <div class="input-container">
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" name="Date Of Birth" required>
+            </div>
+
+            <div class="input-container">
+                <label for="country">Country</label>
+                <select id="country" name="Country" required>
                 <option value="usa">United States</option>
                 <option value="canada">Canada</option>
-                <option value="uk">United Kingdom</option>
+                <option value="uk" selected>United Kingdom</option>
                 <option value="australia">Australia</option>
-                <!-- Add more countries as needed -->
+                <!-- Some countries are added using Javascript -->
             </select>
-        </div>
-
-        <div class="gender-container">
-            <label>Gender</label>
-            <div class="gender-options">
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
             </div>
-        </div>
 
-        <div class="buttons">
-            <button type="submit" id="submit">submit</button>
-            <button type="reset" id="reset">reset</button>
-        </div>
+            <div class="gender-container">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="Gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="Gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
 
-        <!-- Add a submit button to submit the form if needed -->
-        <!-- <input type="submit" value="Submit"> -->
+            <div class="buttons">
+                <button type="submit" id="submit">Submit</button>
+                <button type="reset" id="reset">Reset</button>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <button type="reset" class="close" id="close-popup">&times;</button>
+                    <h3>Submitted Data:</h3>
+                    <div id="popup-data"></div>
+                </div>
+            </div>
+        </form>
+
     </div>
+
+    <script src="form.js"></script>
 </body>
 
 </html>
